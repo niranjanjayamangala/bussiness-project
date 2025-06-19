@@ -8,6 +8,7 @@ const farmerdetailsrouter=require('./src/controllers/farmerdetails.js');
 const fishexportdetailsrouter=require('./src/controllers/fishexportdetails.js');
 const expensesdetailsrouter=require('./src/controllers/expensesdetails.js');
 const banktransactiondetailsrouter=require('./src/controllers/banktransactiondetails.js');
+const fishbillingchartrouter=require('./src/controllers/fishbillingchartdetails.js');
 const imagesRouter = require("./src/controllers/images.js")
 const { default: mongoose } = require('mongoose');
 const dotenv  = require('dotenv');
@@ -35,6 +36,7 @@ app.use('/labourpagedetails',labourpagedetailsrouter);
 app.use('/farmerdetails',farmerdetailsrouter);
 app.use('/fishexportdetails',fishexportdetailsrouter);
 app.use('/expensesdetails',expensesdetailsrouter);
+app.use('/fishbillingchartdetails',fishbillingchartrouter);
 app.use('/images',imagesRouter)
 app.use('/banktransactiondetails',banktransactiondetailsrouter);
 app.listen(PORT,()=>{
