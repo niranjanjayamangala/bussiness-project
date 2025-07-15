@@ -28,7 +28,7 @@ const FishChartBIllingDetailSchema = new mongoose.Schema(
         type: [String],
       required: true,
      },
-     peices:{
+     pieces:{
         type: [String],
       required: true,
       
@@ -68,7 +68,7 @@ const FishChartBIllingDetailSchema = new mongoose.Schema(
         type:[String],
         required:true
     },
-    commission:{
+    comm:{
         type:String,
         required:true
 

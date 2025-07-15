@@ -24,7 +24,7 @@ router.post(
             Amount,
             grandTotalAmount,
             Advance,
-            commission,
+            comm,
             others,
             payments,
             paymentMethod,
@@ -57,7 +57,7 @@ router.post(
                 Amount,
                 grandTotalAmount,
                 Advance,
-                commission,
+                comm,
                 others,
                 payments,
                 paymentMethod,
@@ -66,7 +66,7 @@ router.post(
             });
 
             const savedFishChart = await newFishChart.save(); // Await the save operation
-            res.status(201).json({ message: "Fish chart added successfully", billingDetail: savedFishChart });
+            res.status(201).json({ message: "Fish chart added successfully", savedFishChart });
         } catch (error) {
             console.error("Error adding fish chart:", error);
             res.status(500).json({ message: "Failed to add fish chart", error });

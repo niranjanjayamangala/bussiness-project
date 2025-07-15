@@ -41,7 +41,8 @@ router.post('/create_fishexportdetails',upload.array("images",10), async (req, r
       exportDate,
       exporterName,
       documentation,
-      status
+      status ,
+      images : imageIds
     });
 
     const savedExport = await newExport.save();

@@ -10,7 +10,7 @@ const expensesdetailsrouter=require('./src/controllers/expensesdetails.js');
 const banktransactiondetailsrouter=require('./src/controllers/banktransactiondetails.js');
 const fishbillingchartrouter=require('./src/controllers/fishbillingchartdetails.js');
 const imagesRouter = require("./src/controllers/images.js")
-const { default: mongoose } = require('mongoose');
+const { mongoose } = require('mongoose');
 const dotenv  = require('dotenv');
 const PORT=3000;
 
